@@ -1,0 +1,25 @@
+/* Copyright 2016 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+/*
+ * This file is included by cts_common.h as an enumeration of error codes,
+ * as well as being processed by cts.py to get error code names. The format
+ * must be either of the followings:
+ *
+ *   CTS_RC_<NAME>,
+ *   CTS_RC_<NAME> = X,
+ *
+ * where <NAME> will be printed on the result screen.
+ */
+
+/* Host only codes. Should not be needed by th.c or dut.c. */
+CTS_RC_DUPLICATE_RUN = -2,
+CTS_RC_NO_RESULT = -1,
+
+/* Regular codes */
+CTS_RC_SUCCESS = 0,
+CTS_RC_FAILURE,
+CTS_RC_BAD_SYNC,
+CTS_RC_TIMEOUT,

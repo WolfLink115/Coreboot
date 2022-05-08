@@ -1,0 +1,3 @@
+cbmem.o: cbmem.c ../../src/commonlib/include/commonlib/cbmem_id.h \
+ ../../src/commonlib/include/commonlib/timestamp_serialized.h compiler.h \
+ ../../src/commonlib/include/commonlib/coreboot_tables.h
